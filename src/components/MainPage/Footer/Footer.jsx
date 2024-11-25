@@ -58,7 +58,7 @@ export const Footer = () => {
                             key={post.id}
                             sx={{
                                 width: '200px',
-                                height: 'auto',
+                                height: '100%',
                                 borderRadius: '8px',
                                 boxShadow: '10px 10px 14px 10px rgba(0, 0, 0, 0.1)',
                                 overflow: 'hidden',
@@ -66,6 +66,7 @@ export const Footer = () => {
                                 flexDirection: 'column',
                                 marginBottom: '0',
                                 paddingBottom: '0',
+                                boxSizing:'border-box'
                             }}
                             onClick={() => handlePostClick(post)}
                         >
