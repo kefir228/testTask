@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Typography, Box, Container, Avatar, Card,CircularProgress, CardContent } from '@mui/material';
+import { Typography, Box, Container, Avatar, Card, CircularProgress, CardContent } from '@mui/material';
 import img from '../img/Icon.png'
 import media from '../img/media.png'
 import { useNavigate } from 'react-router-dom';
@@ -14,7 +14,7 @@ export const Content = () => {
     const { posts, status: postsStatus } = useSelector((state) => state.posts);
     const { users, status: usersStatus } = useSelector((state) => state.users);
     const isAuthenticated = useSelector(selectIsAuthenticated);
-    
+
     useEffect(() => {
         if (postsStatus === 'idle') {
             dispatch(fetchPosts());
@@ -47,7 +47,7 @@ export const Content = () => {
     if (!post) {
         return (
             <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
-                <CircularProgress/>
+                <CircularProgress />
             </Box>
         );
     }
@@ -95,11 +95,9 @@ export const Content = () => {
                             fontWeight: 'bold',
                             cursor: 'pointer'
                         }}
-                        onClick={()=>handlePostClick(post)}
+                        onClick={() => handlePostClick(post)}
                     >
-
                         {post.title}
-
                     </Typography>
                     <Typography variant="body1" color="textSecondary">
                         {post.body}

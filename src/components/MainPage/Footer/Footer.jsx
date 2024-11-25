@@ -47,8 +47,7 @@ export const Footer = () => {
                         flexWrap: 'wrap',
                         gap: 2,
                         justifyContent: 'space-between',
-                        height:'308px',
-
+                        height:'310px',
                     }}
                 >
                     {status === 'loading' && <Typography>Loading posts...</Typography>}
