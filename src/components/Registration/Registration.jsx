@@ -204,7 +204,7 @@ export const Registration = ({ isSignUpProp, contentData }) => {
                             <Typography variant="h5" gutterBottom>
                                 Get Your FREE <span style={{ color: "green" }}>30-Days Trial Now!</span>
                             </Typography>
-                            {contentData.map((item, index) => (
+                            {contentData && contentData.map((item, index) => (
                                 <Typography
                                     key={index}
                                     variant="body2"
