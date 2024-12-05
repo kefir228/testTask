@@ -219,7 +219,6 @@ export const Registration = ({ isSignUpProp, contentData }) => {
                                             color: "#484848",
                                         }}
                                     >
-
                                         {item.body}
                                     </Typography>
 

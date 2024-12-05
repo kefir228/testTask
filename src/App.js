@@ -60,7 +60,7 @@ function App() {
               <Routes>
                 <Route path='/' element={<MainComponent />} />
                 <Route path='/login' element={<Registration isSignUpProp={false} contentData={contentData} />} />
-                <Route path='/signup' element={<Registration isSignUpProp={true} />} />
+                <Route path='/signup' element={<Registration isSignUpProp={true} contentData={contentData} />} />
                 <Route
                   path='/infoPost'
                   element={
